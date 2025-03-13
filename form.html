@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Forms</h1>
+    </header>
+    <hr />
+    <main>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="Fname">First Name</label>
+            <input
+              type="text"
+              name="Fname"
+              id="Fname"
+              placeholder="Enter First Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="Lname">Last Name</label>
+            <input
+              type="text"
+              name="Lname"
+              id="Lname"
+              placeholder="Enter Last Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter Phone"
+              required
+            />
+          </p>
+          <p>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" />
+          </p>
+          <p>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+          </p>
+          <p>
+            <label for="address">Address</label>
+            <textarea
+              name="address"
+              id="address"
+              placeholder="Enter Address"
+            ></textarea>
+          </p>
+          <p>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </p>
+          <p>
+            <label for="resume">upload Resume</label>
+            <input type="file" name="resume" id="file">
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Favorite</legend>
+            <p>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </p>
+            <p>
+                <label for="food">Food</label>
+                <input type="text" name="food" id="food">
+            </p>
+            <p>
+                <label for="movie">Movie</label>
+                <input type="text" name="movie" id="movie">
+            </p>
+            <p>
+                <label for="book">Book</label>
+                <input type="text" name="book" id="book">
+            </p>
+            <p>
+                <label for="game">Game:</label>
+                <input type="checkbox" name="game" id="Football" value="Football">
+                <label for="Football">Football</label>
+                <input type="checkbox" name="game" id="Cricket" value="Cricket">
+                <label for="Cricket">Cricket</label>
+                <input type="checkbox" name="game" id="Tennis" value="Tennis">
+                <label for="Tennis">Tennis</label>
+            </p>
+        </fieldset>
+        <br>
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
